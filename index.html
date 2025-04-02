@@ -1,87 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for character encoding and responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
+        /* General body styling */
+        body {
             background-color: black;
         }
-        .aboutme{
-            color: rgb(97, 61, 131);
-            text-align: center;
-            text-decoration: underline;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        }
-        .text1{
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            color: white;
-        }
-        .text2{
-            color: white;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-        .text3{
-            color: white;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-        .EducationBackground{
-            color: rgb(97, 61, 131);
-            text-align: center;
-            text-decoration: underline;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        }
-        .MyInterests{
-            color: rgb(97, 61, 131);
-            text-align: center;
-            text-decoration: underline;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        }
-        .skills{
-            color: rgb(97, 61, 131);
-            text-align: center;
-            text-decoration: underline;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        }
-        .text4{
-            margin: 100px;
-            color: white;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-        .contacts{
-            color: rgb(97, 61, 131);
-            text-align: center;
-            text-decoration: underline;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        }
-        .cv{
-            color: rgb(97, 61, 131);
-            text-align: center;
-            text-decoration: underline;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        }
-        .box{
-            display:table-column-group;
-            display: flex;
-            height: 450px;
-            width: auto;
-            background-color: rgb(93, 97, 97);
-            top: 50px;
-            left: 0;
-        }
-        .auto-expand {
-            width: 300px;
-            min-height: 250px;
-            resize: none;
-            box-sizing: border-box;
-            padding: 5px;
-            overflow-y: auto; 
-        }
-        input{
-            height: 50px;
-            width: 300px;
-        }
+
+        /*a link stylling*/
         a{
             text-decoration: none;
             color: white;
@@ -91,20 +21,131 @@
             padding-top: 5px;
             width: 50px;
             height: 30px;
+        }   
+        /* Styling for the "About Me" section with animation */
+        .aboutme {
+            color: rgb(97, 61, 131);
+            text-align: center;
+            text-decoration: underline;
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+            animation: fadeIn 2s ease-in-out; /* Fade-in animation */
         }
-        .download{
-            color: black;
+    
+        /* Text styling for various sections */
+        .text1{
+            font-family: system-ui, sans-serif;
+            color: white;
+            animation: slideIn 1.5s ease-in-out; /* Slide-in animation */
         }
-        .Interests{
-            padding-top: 10px;
-            width: 120px;
-            height: 40px;
-            cursor: pointer;
-            background-color: rgb(136, 124, 124);
+        .text2{
+            font-family: system-ui, sans-serif;
+            color: white;
+            animation: slideIn 1.5s ease-in-out; /* Slide-in animation */
+        }
+        .text3{
+            font-family: system-ui, sans-serif;
+            color: white;
+            animation: slideIn 1.5s ease-in-out; /* Slide-in animation */
+        }
+        .text4 {
+            font-family: system-ui, sans-serif;
+            color: white;
+            animation: slideIn 1.5s ease-in-out; /* Slide-in animation */
+        }
+    
+        /* Section headers styling with bounce animation */
+        .EducationBackground{
+            color: rgb(97, 61, 131);
+            text-align: center;
+            text-decoration: underline;
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+            animation: bounce 1.5s infinite; /* Bounce animation */
+        }
+        .MyInterests{
+            color: rgb(97, 61, 131);
+            text-align: center;
+            text-decoration: underline;
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+            animation: bounce 1.5s infinite; /* Bounce animation */
+        }
+        .skills{
+            color: rgb(97, 61, 131);
+            text-align: center;
+            text-decoration: underline;
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+            animation: bounce 1.5s infinite; /* Bounce animation */
+        }
+        .contacts{
+            color: rgb(97, 61, 131);
+            text-align: center;
+            text-decoration: underline;
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+            animation: bounce 1.5s infinite; /* Bounce animation */
+        }
+        .cv{
+            color: rgb(97, 61, 131);
+            margin-left: 10px;
+            text-decoration: underline;
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+            animation: bounce 1.5s infinite; /* Bounce animation */
+        }
+    
+        /* Styling for the box container */
+        .box {
+            display: flex;
+            height: 450px;
+            width: auto;
+            background-color: rgb(93, 97, 97);
+            top: 50px;
+            left: 0;
+            animation: fadeInUp 2s ease-in-out; /* Fade-in from bottom */
+        }
+    
+        /* Keyframes for fade-in animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    
+        /* Keyframes for slide-in animation */
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+    
+        /* Keyframes for bounce animation */
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    
+        /* Keyframes for fade-in from bottom */
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
         }
     </style>
 </head>
 <body>
+    <!-- About Me Section -->
     <div class="aboutme">
         <h1><b>about me</b></h1>
     </div>
@@ -112,6 +153,7 @@
         <p>My name is <b>Ndiritu Abel Kihara,</b> a curious individual always learning and growing, passionate and driven with a love for technology development. I am driven by passion for tech growth.   </p>
     </div>
 
+    <!-- Education Background Section -->
     <div class="EducationBackground">
         <h1><b>Education Background: &#X1F393; &#X1F4DA;</b></h1>
     </div>
@@ -119,12 +161,13 @@
         <p>I started my lower education in a nursery school called <b>higlight academy</b> in the year <b>2009</b>. I did very well in my studies untill <b>2011</b> when I graduatetd from my nursery school education. In the year <b>2012</b>, I started my primary school education in a school called <b>Mbiriri Primary School</b> till <b>2019</b> where I finished my primary school education. In <b>2020</b>, I joined <b>Kanjuri High School</b> untill <b>2023</b>, where I completed my high school education. In <b>2024</b>, I was admitted in <b>Kirinyaga University</b>. Currently I'm a first year pursuing <b>Bachelor of Science in Information Technology. I'm currently also learning under the PLP Africa(P) pprogramme</b></p>
     </div>
 
+    <!-- My Interests Section -->
     <div class="MyInterests">
         <h1><b>My Interests: &#X1F50D;</b></h1>
     </div>
     <div class="text3">
         <ul>
-            <li><p><b>Web development: </b>After joining University, I joined computer club where i have learnt more on web development. I'm exploring modern frame works and best practices to a achieve the best.></p>
+            <li><p><b>Web development: </b>After joining University, I joined computer club where i have learnt more on web development. I'm exploring modern frame works and best practices to a achieve the best.</p>
             <img src="security_programming_hero.jpg" alt="" style="width: 400px; height: 200px;">
             </li>
             <li><p><b>Tech inovations: </b>I keep up with emerging trends in the field of computing</p></li>
@@ -134,55 +177,64 @@
         </ul>
     </div>
 
+    <!-- Skills Section -->
     <div class="skills">
         <h1><b>My skills: &#x2B50; &#x2705;</b></h1>
     </div>
     <div class="text4">
         <ul>
-            <li><p><b>windows installation: &#x2B07;</b></p></li>
-            <li><p><b>windows activation</b></p></li>
-            <li><p><b>office installation: &#x2B07;</b></p></li>
-            <li><p><b>office activation</b></p></li>
-            <li><p><b>network trouble shooting: &#x1F527;</b></p></li>
-            <li><p><b>wifi installation: &#x1F4F6; &#x1F527;</b></p></li>
-            <p>Apart from the above i have skills in the following programming languages:</p>
+            <li><p><b>Windows installation:</b></p></li>
+            <li><p><b>Windows activation:</b></p></li>
+            <li><p><b>Office installation:</b></p></li>
+            <li><p><b>Office activation:</b></p></li>
+            <li><p><b>Network troubleshooting:</b></p></li>
+            <li><p><b>WiFi installation:</b></p></li>
+            <p>Apart from the above, I have skills in the following programming languages:</p>
             <li><p><b>HTML</b></p></li>
             <li><p><b>CSS</b></p></li>
             <li><p><b>C</b></p></li>
             <li><p><b>C++</b></p></li>
             <li><p><b>C#</b></p></li>
             <li><p><b>Python</b></p></li>
-            <li><p><b>javascript</b></p></li>
+            <li><p><b>JavaScript</b></p></li>
+
             <p>Databases such as:</p>
-            <li><p><b>mysql</b></p></li>
-            <li><p><b>Mongo DB</b></p></li>
+            <li><p><b>MySQL</b></p></li>
+            <li><p><b>MongoDB</b></p></li>
         </ul>
     </div>
+
+    <!-- CV Download Section -->
     <div class="cv">
-        <h1><b>Download my cv</b></h1>
+        <h1><b>Download my CV</b></h1>
     </div>
     <div class="download">
-        <a href="MY CURRICULUM VITAE.pdf" download="my cv"><button style="color: black; width: 450px; height: 35px; cursor: pointer; margin-left: 600px;">download my CV</button></a>
+        <a href="MY CURRICULUM VITAE.pdf" download="my cv">
+            <button style="color: black; width: 450px; height: 35px; cursor: pointer; margin-left: 60px;">Download my CV</button>
+        </a>
     </div>
 
+    <!-- Contact Section -->
     <div class="contacts">
         <h1><b>Contact me: &#x1F4F1; &#x1F4BB;</b></h1>
     </div>
     <div class="box">
+        <!-- Social Media Links -->
         <div class="links">
-            <a href="">what'sapp<img src="" alt=""></a><br>
-            <a href="https://www.facebook.com/profile.php?id=61559987407737&mibextid=ZbWKwL" target="_blank"><img src="667px-2023_Facebook_icon.svg.png" alt="">facebook</a><br>
-            <a href="mailto:abelkihara8@gmail.com" target="_blank"> <img src="images (1).png" alt="">email</a><br>
+            <a href="">WhatsApp<img src="" alt=""></a><br>
+            <a href="https://www.facebook.com/profile.php?id=61559987407737&mibextid=ZbWKwL" target="_blank"><img src="667px-2023_Facebook_icon.svg.png" alt="">Facebook</a><br>
+            <a href="mailto:abelkihara8@gmail.com" target="_blank"><img src="images (1).png" alt="">Email</a><br>
             <a href="https://x.com/TheBoulder73572?t=Fm_n_eveJjqXcnUzSYobNg&s=09" target="_blank"><img src="new-2023-twitter-logo-x-icon-design_1017-45418.jpg" alt="">X</a><br>
             <a href="https://github.com/Boulder1-kihara" target="_blank"><img src="images.png" alt="">GitHub</a><br>
-            <a href="https://www.linkedin.com/in/abel-kihara-87ab86325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="linkedin.png" alt="">linkedIn</a><br>
-            <a href="https://www.instagram.com/theboulder2024?igsh=MW0zdHBwMHdpczdnMw==" target="_blank"><img src="_89649395_instagram_logo_976.jpg" alt="">instagram</a>
+            <a href="https://www.linkedin.com/in/abel-kihara-87ab86325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="linkedin.png" alt="">LinkedIn</a><br>
+            <a href="https://www.instagram.com/theboulder2024?igsh=MW0zdHBwMHdpczdnMw==" target="_blank"><img src="_89649395_instagram_logo_976.jpg" alt="">Instagram</a>
         </div>
-        <textarea class="comment" placeholder="comment" style="height: 30px; margin-top: 380px; margin-left: 10px; width: auto; "></textarea>
-          <div class="button">
-            <input type="button" value="submit your comment" style="height: 35px; width: 150px; cursor: pointer; margin-top: 200px; color: black; background-color: rgb(41, 126, 41); border-radius: 10px; border: 2px black solid; margin-left: 80px; margin-top: 350px;">
-          </div>
-        
+
+        <!-- Comment Section -->
+        <textarea class="comment" placeholder="comment" style="height: 30px; margin-top: 380px; margin-left: 10px; width: auto;"></textarea>
+        <div class="button">
+            <input type="button" value="Submit your comment" style="height: 35px; width: 150px; cursor: pointer; margin-top: 200px; color: black; background-color: rgb(41, 126, 41); border-radius: 10px; border: 2px black solid; margin-left: 80px; margin-top: 350px;">
+        </div>
     </div>
 </body>
 </html>
